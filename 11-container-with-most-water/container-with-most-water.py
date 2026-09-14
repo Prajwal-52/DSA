@@ -6,11 +6,9 @@ class Solution:
         while l<r:
             if h[l]<h[r]:
                 area=h[l]*(r-l)
-            else:
-                area=h[r]*(r-l)
-            if h[l]<h[r]:
                 l+=1
             else:
+                area=h[r]*(r-l)
                 r-=1
             marea=max(marea,area)
         return marea
