@@ -10,9 +10,6 @@ class Solution:
                 i+=1
                 continue
             while j<k:
-                # if nums[j]==nums[j-1] and j>1:
-                #     j+=1
-                #     continue
                 t=nums[i]+nums[j]+nums[k]
                 if t==0:
                     res.append([nums[i],nums[j],nums[k]])
