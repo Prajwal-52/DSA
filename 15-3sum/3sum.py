@@ -6,6 +6,8 @@ class Solution:
         while i<len(nums)-2:
             j=i+1
             k=len(nums)-1
+            if nums[i]>0:
+                break
             if nums[i]==nums[i-1] and i>0:
                 i+=1
                 continue
