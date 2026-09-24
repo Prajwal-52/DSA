@@ -1,10 +1,11 @@
 class Solution:
     def smallestIndex(self, nums: List[int]) -> int:
         for i in range(0,len(nums)):
-            sum=0
-            while nums[i]>0:
-                sum += nums[i]%10
-                nums[i] //= 10
-            if sum == i:
+            digit_sum = 0
+            x = nums[i]
+            while x > 0:
+                digit_sum += x%10
+                x //= 10
+            if digit_sum == i:
                 return i
         return -1
